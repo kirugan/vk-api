@@ -1,0 +1,12 @@
+{
+    "name": "kirill/vk",
+    "description": "VK tools",
+    "authors": [
+        {
+            "name": "kirill",
+            "email": "root@kirugan.ru"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
