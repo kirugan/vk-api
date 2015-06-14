@@ -2,9 +2,7 @@
 namespace Kirill\VK;
 
 class Helper {
-    const API_LAST_VERSION = '5.34';
-    
-    public static function getAuthorizeURL($client_id, $scope, $redirect_uri, $version = self::API_LAST_VERSION, $state = ''){
+    public static function getAuthorizeURL($client_id, $scope, $redirect_uri, $version = Core::API_LAST_VER, $state = ''){
         $base = 'https://oauth.vk.com/authorize';
         $query = http_build_query([
             'client_id' => $client_id,

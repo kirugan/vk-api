@@ -8,14 +8,14 @@ class Api{
   protected $version;
   protected $access_token;
   
-  public function __construct(Client $client, $access_token = '', $version = '5.11') {
+  public function __construct(Client $client, $access_token = '', $version = Core::API_LAST_VER) {
     $this->client = $client;
     $this->client->setBaseUrl('https://api.vk.com/method/');
     $this->version = $version;
     $this->access_token = $access_token;
   }
   
-  public function call($method, $params){
+  public function call($method, array $params = []){
     $params['v'] = $this->version;
     $params['access_token'] = $this->access_token;
     $params['lang'] = 'ru';
