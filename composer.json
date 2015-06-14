@@ -9,7 +9,7 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "guzzle/guzzle": "^3.9@dev"
+        "guzzle/guzzle": "3.9@dev"
     },
     "autoload": {
         "classmap": ["src/"]
