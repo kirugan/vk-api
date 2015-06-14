@@ -17,4 +17,16 @@ class Helper {
         
         return "{$base}?{$query}";
     }
+    
+    public static function getAccessTokenURL($client_id, $client_secret, $code, $redirect_uri){
+        $base = 'https://oauth.vk.com/access_token';
+        $query = http_build_query([
+            'client_id' => $client_id,
+            'client_secret' => $client_secret,
+            'code' => $code,
+            'redirect_uri' => $redirect_uri
+        ]);
+        
+        return "{$base}?{$query}";
+    }
 }
