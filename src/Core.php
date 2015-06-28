@@ -2,5 +2,5 @@
 namespace Kirill\VK;
 
 class Core {
-    const API_LAST_VER = '5.34';
+    const API_LAST_VERSION = '5.34';
 }

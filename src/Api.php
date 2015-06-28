@@ -8,7 +8,7 @@ class Api{
   protected $version;
   protected $access_token;
   
-  public function __construct(Client $client, $access_token = '', $version = Core::API_LAST_VER) {
+  public function __construct(Client $client, $access_token = '', $version = Core::API_LAST_VERSION) {
     $this->client = $client;
     $this->client->setBaseUrl('https://api.vk.com/method/');
     $this->version = $version;
