@@ -67,7 +67,7 @@ class App {
         $ret = [];
         foreach((new \ReflectionClass(__CLASS__))->getConstants() as $const => $v){
             if(strpos($const, $prefix) === 0){
-                $ret[] = $const;
+                $ret[] = $v;
             }
         }
         
