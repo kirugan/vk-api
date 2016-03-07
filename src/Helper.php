@@ -1,5 +1,5 @@
 <?php
-namespace Kirill\VK;
+namespace Kirugan\VKApi;
 
 class Helper {
     public static function getAuthorizeURL($client_id, $scope, $redirect_uri, $version = Core::API_LAST_VERSION, $state = ''){
